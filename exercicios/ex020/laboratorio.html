@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-laboratório CSS: Pseudo-classes</title>
+  <style>
+    /* PSEUDO-CLASSES DE INTERAÇÃO */
+    .btn {
+      background: #64748b;
+      color: white;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin: 0.5em 0;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #334155; /* :hover = mouse em cima do botão */
+    }
+    .btn:focus-visible {
+      outline: 3px solid #22c55e; /* :focus-visible = ao tabular, melhora acessibilidade */
+      outline-offset: 3px;
+    }
+    .btn:active {
+      transform: scale(0.98); /* :active = enquanto clica */
+    }
+
+    /* PSEUDO-CLASSES ESTRUTURAIS */
+    ul.zebra li:nth-child(odd) {
+      background: #f1f5f9; /* linhas ímpares da lista */
+    }
+    ul.zebra li:nth-child(even) {
+      background: #e0e7ef; /* linhas pares da lista */
+    }
+
+    ul.zebra li:first-child {
+      font-weight: bold; /* destaca o primeiro */
+    }
+    ul.zebra li:last-child {
+      border-left: 4px solid #2563eb;
+    }
+
+    /* Exemplo com :not() */
+    .breadcrumb li:not(:last-child)::after {
+      content: "→";               /* pseudo-elemento mostrando seta nos que não forem o último */
+      color: #9ca3af;
+      margin: 0 6px;
+    }
+
+    /* FORMULÁRIOS: estados */
+    .campo input:focus {
+      border: 2px solid #eab308;
+      background: #fef9c3;
+    }
+    .campo input:valid {
+      background: #dcfce7;
+    }
+    .campo input:invalid:not(:placeholder-shown) {
+      background: #fee2e2;
+    }
+    .campo input:disabled {
+      background: #f3f4f6;
+      opacity: 0.7;
+    }
+
+    .campo:focus-within label {
+      color: #0ea5e9; /* destaca label se algum campo do grupo está com foco */
+    }
+
+    /* PSEUDO-ELEMENTOS */
+    .btn::before {
+      content: "✨ ";
+    }
+    .zebra li::after {
+      content: " ✓";
+      color: #16a34a;
+      font-size: 0.85em;
+      margin-left: 4px;
+      opacity: 0.2;
+      transition: opacity 0.3s;
+    }
+    .zebra li:hover::after {
+      opacity: 1; /* ao passar o mouse, fica visível */
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-classes & Pseudo-elementos em CSS</h1>
+
+  <section>
+    <h2>Botão interativo</h2>
+    <button class="btn">Clique/TAB aqui</button>
+  </section>
+
+  <section>
+    <h2>Lista com zebra e destaques</h2>
+    <ul class="zebra">
+      <li>Primeiro item (1)</li>
+      <li>Segundo item (2)</li>
+      <li>Terceiro item (3)</li>
+      <li>Quarto item (4)</li>
+      <li>Último item (5)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Navegação tipo breadcrumb</h2>
+    <ul class="breadcrumb" style="display:flex; list-style: none; padding:0;gap:0.8em;">
+      <li>Início</li>
+      <li>Página</li>
+      <li>Detalhe</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Formulário com estados</h2>
+    <form>
+      <div class="campo">
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+      </div>
+      <br>
+      <div class="campo">
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" minlength="4" placeholder="Digite sua senha" required>
+      </div>
+      <br>
+      <div class="campo">
+        <label for="desabilitado">Campo desabilitado</label><br>
+        <input type="text" id="desabilitado" disabled value="Não editável">
+      </div>
+    </form>
+  </section>
+</body>
+</html>
