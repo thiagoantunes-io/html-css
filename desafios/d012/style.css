@@ -36,14 +36,13 @@ header {
     font-family: var(--fonte-padrao);
     text-align: center;
     font-weight:lighter;
-    min-height: 160px;
-   
+    min-height: 160px; 
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
     font-weight:bold;
-    font-variant: small-caps;
+    font-variant-caps: small-caps;  /*font-variant-caps é a versão mais avançada e específica da propriedade font-variant*/
     font-size: 10vw; 
     padding-top: 50px;
 }
@@ -58,7 +57,7 @@ header a {
     font-weight: bold;
 }
 
-main #imagem01 {
+main section#imagem01 {
     /*
     background-color: var(--fundo-padrao);
     background-image: url('imagens/background001.jpg');
@@ -70,7 +69,7 @@ main #imagem01 {
     background-size: cover;   
 }
 
-main #imagem02 {
+main section#imagem02 {
     /*
     background-color: var(--fundo-padrao);
     background-image: url('imagens/background002.jpg');
