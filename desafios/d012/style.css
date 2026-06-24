@@ -42,7 +42,8 @@ header {
 
 header > h1 {
     font-family: var(--fonte-destaque);
-    font-weight:lighter;
+    font-weight:bold;
+    font-variant: small-caps;
     font-size: 10vw; 
     padding-top: 50px;
 }
