@@ -16,12 +16,12 @@
     --fonte-elegante: "Sriracha", cursive;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: var(--fundo-padrao);
     height: 100vh;
 }
@@ -37,18 +37,18 @@ header {
     text-align: center;
     font-weight:lighter;
     min-height: 160px;
-    padding-top: 60px;
+   
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
     font-weight:lighter;
     font-size: 10vw; 
-    padding-bottom: 10px;
+    padding-top: 50px;
 }
 
 header p {
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 header a {
@@ -81,39 +81,49 @@ main #imagem02 {
     background-size: cover;
 }
 
-main article{
-    padding: 50px 20px;
+main div {
+    padding: 50px;
     min-height: 200px;
 }
 
-main article.fundo-branco {
+main div.fundo-branco {
     background-color: var(--fundo02);   
 }
 
-main article.fundo-colorido {
-    padding: 100px 20px;
+main div.fundo-branco2 {
+    background-color: var(--fundo02);
+    padding-bottom: 0px;
 }
 
-main article p {
+main div.fundo-colorido {
+    padding: 100px 50px;
+}
+
+main div p {
     color: var(--cor-fonte02);
     font-family: var(--fonte-elegante);
-    line-height: 2.3em;
-    font-size: 4vw;
-    font-weight: bold;
+    line-height: 2em;
+    font-size: 3.5vw;
     border-radius: 5px;
 
     max-width: 48vw;
-    padding: 20px 10px;
+    padding: 5px;
 }
 
-main article.fundo-branco p {
+main div.fundo-branco p {
     color: var(--cor-fonte01);
     max-width: 60vw;
 }
 
-main article.fundo-colorido p {
+main div.fundo-branco2 p {
+    color: var(--cor-fonte01);
+    max-width: 60vw;
+}
+
+main div.fundo-colorido p {
     background-color: var(--fundo03);
     text-shadow: 1px 1px 1px black;
+    max-width: 42vw;
 }
 
 footer {
