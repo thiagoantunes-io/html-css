@@ -9,8 +9,8 @@
     --cor-fonte02: white;
     --fundo01: black;
     --fundo02: white;
-    --fundo03: rgba(0, 0, 0, 0.562);
-    --fundo-padrao: rgb(189, 189, 183);
+    --fundo03: rgba(0, 0, 0, 0.462);
+    --fundo-padrao: darkgrey;
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-destaque: "Passion One", sans-serif;
     --fonte-elegante: "Sriracha", cursive;
@@ -19,6 +19,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -57,6 +58,38 @@ header a:hover, footer a:hover {
     text-decoration:underline;
 }
 
+main section {
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+main section.fundo-branco {
+    background-color: var(--fundo02);
+    color: var (var(--cor-fonte01));
+}
+
+main section.fundo-colorido {
+    color: var(--cor-fonte02);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.436);
+}
+
+main section p {
+    font-family: var(--fonte-elegante);
+    line-height: 2em;
+    font-size: 3.5vw;
+    border-radius: 5px;
+
+    padding: 5px;
+    padding-bottom: 1em; 
+}
+
+main section.fundo-colorido p {
+    display: inline-block;
+    background-color: var(--fundo03);
+    text-shadow: 1px 1px 0px black;
+}
+
 main section#imagem01 {
     /*
     background-color: var(--fundo-padrao);
@@ -73,55 +106,12 @@ main section#imagem02 {
     /*
     background-color: var(--fundo-padrao);
     background-image: url('imagens/background002.jpg');
-    background-position: center left;
+    background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;*/
 
-    background: var(--fundo-padrao) url('imagens/background002.jpg') center left no-repeat fixed;
+    background: var(--fundo-padrao) url('imagens/background002.jpg') right center no-repeat fixed;
     background-size: cover;
-}
-
-main div {
-    padding: 50px;
-    min-height: 200px;
-}
-
-main div.fundo-branco {
-    background-color: var(--fundo02);   
-}
-
-main div.fundo-branco2 {
-    background-color: var(--fundo02);
-    padding-bottom: 0px;
-}
-
-main div.fundo-colorido {
-    padding: 100px 50px;
-}
-
-main div p {
-    color: var(--cor-fonte02);
-    font-family: var(--fonte-elegante);
-    line-height: 2em;
-    font-size: 3.5vw;
-    border-radius: 5px;
-
-    display: inline-block;
-    padding: 5px;
-}
-
-main div.fundo-branco p {
-    color: var(--cor-fonte01);
-}
-
-main div.fundo-branco2 p {
-    color: var(--cor-fonte01);
-}
-
-main div.fundo-colorido p {
-    background-color: var(--fundo03);
-    text-shadow: 1px 1px 1px black;
-    max-width: 42vw;
 }
 
 footer {
