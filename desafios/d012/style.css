@@ -21,13 +21,9 @@
     padding: 0px;
 }
 
-body {
+html, body {
     background-color: var(--fundo-padrao);
-    height: 100vh;
-}
-
-body a:hover {
-    text-decoration:underline;
+    min-height: 100vh; /* ou min-height: 100%;*/
 }
 
 header {
@@ -51,10 +47,14 @@ header p {
     padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: var(--cor-fonte02);
     font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration:underline;
 }
 
 main section#imagem01 {
@@ -132,9 +132,4 @@ footer {
     font-family: var(--fonte-padrao);
     text-align: center;
     padding: 10px;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--cor-fonte02);
 }
