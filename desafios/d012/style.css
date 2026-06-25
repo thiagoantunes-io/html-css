@@ -24,12 +24,12 @@
 html, body {
     background-color: var(--fundo-padrao);
     min-height: 100vh; /* ou min-height: 100%;*/
+    font-family: var(--fonte-padrao);
 }
 
 header {
     background-color: var(--fundo01);
     color: var(--cor-fonte02);
-    font-family: var(--fonte-padrao);
     text-align: center;
     font-weight:lighter;
     min-height: 160px; 
@@ -106,18 +106,16 @@ main div p {
     font-size: 3.5vw;
     border-radius: 5px;
 
-    max-width: 48vw;
+    display: inline-block;
     padding: 5px;
 }
 
 main div.fundo-branco p {
     color: var(--cor-fonte01);
-    max-width: 60vw;
 }
 
 main div.fundo-branco2 p {
     color: var(--cor-fonte01);
-    max-width: 60vw;
 }
 
 main div.fundo-colorido p {
@@ -129,7 +127,6 @@ main div.fundo-colorido p {
 footer {
     background-color: var(--fundo01);
     color: var(--cor-fonte02);
-    font-family: var(--fonte-padrao);
     text-align: center;
     padding: 10px;
 }
