@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative; 
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) { /*odd ou 2n-1*/
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgreen; /*even ou 2n*/
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /*significa grudável ou colável*/
+            top: 0px; /*ou -1px*/
+            background-color: gray;
+        }
+        td.numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 562 007</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, rem. Numquam ad, similique repudiandae velit aut dolorum ex reprehenderit in quidem ut tenetur nihil distinctio eaque suscipit sed facilis saepe! Officia tempora dolores quos alias! Deserunt dolor autem tempore nam nulla quo voluptates quia, eos enim quasi aspernatur ullam suscipit officiis, facilis ab. Dicta quo quaerat dignissimos sed ipsum incidunt, rerum fugiat porro ullam, iste animi, obcaecati minima? Laborum quaerat nostrum ipsa cumque earum nisi molestias veritatis quibusdam iure unde quae, quis fugiat voluptatem amet impedit harum commodi? A, vitae doloribus. Aliquid culpa quibusdam, deleniti tempora exercitationem itaque debitis, deserunt odio quas dolores asperiores ad laborum laudantium recusandae fugiat magni quasi impedit non eum. Voluptatum minima iste quos quod. Libero amet placeat cupiditate tenetur molestiae consequuntur corrupti suscipit odio obcaecati, nulla sequi fugiat, soluta assumenda culpa vitae architecto corporis at iusto est. Impedit expedita ex facere sequi consectetur nobis delectus inventore harum soluta, corrupti commodi quaerat, pariatur nostrum autem aperiam temporibus placeat repudiandae vitae necessitatibus tempora? Consequuntur ipsam, rerum aperiam, et provident inventore veritatis repellat eum voluptas, consectetur nihil repellendus deleniti! Aperiam eligendi expedita reprehenderit quidem, laboriosam quaerat rem ut quo culpa natus vel labore adipisci voluptates, magnam et perspiciatis deserunt explicabo dignissimos velit dolores illo quis, cupiditate nesciunt? Ad dolorem deserunt iure inventore corrupti numquam fugiat, dolore tempore, blanditiis autem explicabo. Tempora et maiores, quasi repellendus quas praesentium veritatis accusamus cumque voluptates mollitia aliquid consequatur ad enim harum hic perferendis deleniti quis quisquam at sint laboriosam! Magni dolor incidunt quis itaque fugiat amet optio dolorum minus cumque sint! Ipsum sapiente, aperiam, eaque consequatur pariatur non, veniam alias laborum consequuntur quidem quas necessitatibus harum nostrum. Modi unde laborum dolore sed repellendus voluptatibus laboriosam veritatis pariatur vel quia, ullam in reiciendis, ea nemo? Velit sed illo sint, pariatur cupiditate aperiam nulla minima saepe error quod animi, dolor sit tempore eius dolorem vero impedit adipisci esse ipsa minus magni incidunt. Minus sed nihil odio neque voluptatum id voluptate nesciunt? Necessitatibus, veritatis? Error quas unde quis ipsa voluptatem, ipsam, eaque veritatis labore, quibusdam adipisci perferendis consequuntur possimus facere magnam totam dolores natus corporis esse? Sunt laboriosam aliquid deserunt quod rerum libero beatae iste velit eos provident possimus ad vero fugiat ipsa reprehenderit numquam sint magni, tenetur cumque quia quasi architecto explicabo. Possimus sit, maxime sint provident ipsum doloremque vitae fugit quo tenetur dolorum ipsam dicta assumenda neque amet iste quod, nostrum, tempora quidem ab animi incidunt itaque dolor tempore. Quibusdam, esse illo cumque sed minima voluptate quos! Aimos esse fuga aliquam, accusantium placeat quis non. Perspiciatis iure ducimus officiis. Error porro harum tenetur, suscipit maiores libero quas perspiciatis eos! Minus tempore asperiores voluptas eaque provident amet id!</p>
+</body>
+</html>
