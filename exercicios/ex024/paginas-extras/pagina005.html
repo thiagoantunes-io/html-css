@@ -6,8 +6,17 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <a href="#">Clique em mim</a>
-    <div></div>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida">
+        lalala
+
+    </div>
     
+    <script>
+        function clicou(){
+            const s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Você clicou!</p>'
+        }
+    </script>
 </body>
 </html>
