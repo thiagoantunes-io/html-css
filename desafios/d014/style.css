@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vw;
+    /*background-color: black;
+    background-image: url('imagens/fundo-madeira.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+
+    background: black url('imagens/fundo-madeira.jpg') center center no-repeat fixed;
+
+    background-size: cover;
+}
+
+
+main nav {
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+main nav img {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+
+main{
+    position: relative;
+    min-height: 100vh;  
+}
+
+main img.tela-home{
+    width: 270px;  
+}
+
+main > #tela {
+    display: block;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
