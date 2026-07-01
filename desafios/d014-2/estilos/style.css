@@ -42,7 +42,14 @@ section#telefone {
     background-repeat: no-repeat;
     background-attachment: fixed; */
 
-    background: url('../imagens/frame-iphone.png') center center no-repeat fixed;
-    background-size: contain;
+    background: url('../imagens/frame-iphone.png') no-repeat fixed;
 }
 
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+
+    width: 269px;
+    height: 471px;
+}
