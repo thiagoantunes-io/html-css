@@ -26,3 +26,7 @@ a{
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
 }
+
+a:hover{
+    background-color: red;
+}

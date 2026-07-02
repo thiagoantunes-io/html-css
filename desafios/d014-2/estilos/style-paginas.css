@@ -18,11 +18,15 @@ a{
     display: block;
     width: 230px;
     text-align: center;
-    background-color: red;
+    background-color: darkred;
     color: white;
     padding: 20px;
     margin-top: -4px;
     text-decoration: none;
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
+}
+
+a:hover{
+    background-color: red;
 }
