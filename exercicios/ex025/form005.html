@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+        fieldset label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="isexo-masc">
+                <input type="radio" name="sexo" value="masculino" id="isexo-masc">Masculino
+            </label>
+            <label for="isexo-fem">
+                <input type="radio" name="sexo" value="feminino" id="isexo-fem" checked> Feminino
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <label for="iesp-futebol">
+                <input type="checkbox" name="esp-futebol" id="iesp-futebol"> Futebol
+            </label>
+
+            <!-- Obs.: também posso escrever assim: 
+            <input type="checkbox" name="esp-futebol" id="iesp-futebol"><label for="iesp-futebol">Futebol</label>
+            -->
+
+            <label for="iesp-basquete">
+                <input type="checkbox" name="esp-basquete" id="iesp-basquete"> Basquete
+            </label>
+
+            <label for="iesp-natacao">
+                <input type="checkbox" name="esp-natacao" id="iesp-natacao" checked> Natação
+            </label>
+
+            <label for="iesp-tenis">
+                <input type="checkbox" name="esp-tenis" id="iesp-tenis"> Tênis
+            </label>
+
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
