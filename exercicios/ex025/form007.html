@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        div{
+            
+            padding: 10px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+            <option value="" selected>---Escolha---</option>
+            <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+
+            <optgroup label="Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+
+            <optgroup label="Nordeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+        </select>
+
+        <div>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="lista-profissao">
+            <datalist id="lista-profissao">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                <!--value="ADM" - ADM é o código que será enviado ao servidor caso essa opção seja escolhida -->
+
+                <!-- opção sem o atributo value:
+
+            <datalist id="lista-profissao">
+                <option >Administrador</option>
+                <option >Contador</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>  
+                -->
+            </datalist>
+        </div>
+        <div>
+            <label for="imensagem">Mensagem:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>  
+</body>
+</html>
