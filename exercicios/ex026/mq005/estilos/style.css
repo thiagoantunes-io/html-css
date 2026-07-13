@@ -37,7 +37,7 @@ span#burguer:hover{
     color: black;
 }
 
-nav { /* menu de navegação */
+nav#itens { /* menu de navegação */
     display: none;
 }
 
