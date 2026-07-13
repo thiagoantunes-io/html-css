@@ -4,55 +4,56 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+
     margin: 0px;
     padding: 0px;
 }
 
 body, html {
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 
 header {
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(145, 145, 145);
 }
 
-header h1 {
+header > h1 {
     padding: 10px;
-    text-align: center;
+    text-align: center;   
 }
 
-menu{
+nav {
     display: block;
 }
 
-menu > ul {
+nav > ul {
     list-style-type: none;
 }
 
-menu > ul > li > a {
+nav > ul > li > a { /*também poderia fazer assim: nav a {*/
     display: block;
     padding: 10px;
     text-decoration: none;
+    text-align: center;
     background-color: rgb(87, 87, 87);
     color: white;
-    text-align: center;
     border-top: 2px solid gray; /*cria uma linha de borda em cima de cada item */
 }
 
-menu  >ul > li > a:hover{
+nav a:hover{        /*nav > ul > li > a:hover { */
     background-color: gray;
 }
 
 main {
-    width: 90vw;
+    width: 90%;
     background-color: white;
     margin: auto;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 10px;
 }
 
-article > h2 {
+article > h2 { /*main > article > h2*/
     padding-bottom: 20px;
 }
 
@@ -61,5 +62,3 @@ article > p {
     margin-bottom: 20px;
     text-indent: 20px;
 }
-
-
