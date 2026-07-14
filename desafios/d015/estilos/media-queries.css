@@ -56,5 +56,30 @@ Grandes telas: acima de 1201px
 }
 
 @media screen and (min-width: 993px) {
+
+    body{
+        background-image: linear-gradient(to bottom, #5f2c82, #94CFCD);
+    }
+
+    main{
+        background-position: center right;
+        background-size:auto;
+        width: 993px;
+        height: 52vh;
+    }
+
+    form {
+        width: 50%;
+        height: 52vh;
+        left: 25%;
+        top: 50%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    form > label > input {
+    width: 87%;
+    } 
+
+
     
 }
