@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Versão mobile first */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5f2c82;
+    position: relative;
+    
+}
+
+main {
+    background-color: black;
+    background-image: url('../imagens/abstrato-medio2.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    border-radius: 20px;
+
+    /* centralização vertical: */
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    box-sizing: border-box;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    margin: auto;
+
+    /* centralização vertical e abaixo: */
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+form > p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+form > label {
+    position:relative;
+    display: block;
+    box-sizing: border-box;
+    background-color: #5f2c82;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+}
+
+
+form > label > img{
+    width: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+form > label > input {
+    background-color: #94CFCD;
+    width: 80%;
+    border: none;
+    display: inline-block;
+}
+
+input#entrar{
+    background-color: #8ac2c0;
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+}
+
+input#entrar:hover{
+    background-color: #5b8281;
+}
+
+input#esqueciSenha{
+    background-color: white;
+    color: #5b8281;
+    border: 1px solid #94CFCD;
+    margin-bottom: 10px;
+}
+
+input#esqueciSenha:hover{
+     background-color: #5b8281;
+     color: white;
+}
