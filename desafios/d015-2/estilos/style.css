@@ -29,7 +29,7 @@ main {
 }
 
 section#login{
-    position: absolute;
+    position: absolute; /*posso utilizar flexbox para centralizar horizontalmente e verticalmente*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -48,7 +48,7 @@ section#login{
 }
 
 section#login > div#imagem {
-    display: block; /*é opcional pois, por padrão, a div já display do tipo block*/
+    display: block; /*é opcional pois, por padrão, a div já display do tipo block. A declaração display: block é importante para que seja utilzada na CSS das media queries a propriedade float.*/
     background: #5f2c82 url(../imagens/imagem1.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -56,6 +56,15 @@ section#login > div#imagem {
 }
 
 section#login > div#formulario {
-    display: block;  /*é opcional pois, por padrão, a div já display do tipo block*/
+    display: block;  /*é opcional pois, por padrão, a div já display do tipo block. A declaração display: block é importante para que seja utilzada na CSS das media queries a propriedade float.*/
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
