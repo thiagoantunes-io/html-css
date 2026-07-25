@@ -14,19 +14,51 @@ body {
     width: 100vw;
 }
 
-header {
+
+
+header { /*transformei em um flex-container*/
     background-color: gray;
     color: white;
-    padding: 10px;
+    padding: 10px;   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     border: 1px dotted black;
-
+    flex: 0 0 200px;
 }
 
-header > nav {
+header > nav { /*também transformei o nav em um flex-container - se tornando um flex-container dentro de outro flex-container*/
     border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
+div { /*flex-container*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 main {
@@ -37,4 +69,18 @@ main {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.337);
 }
 
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+@media screen  and (min-width: 667px){
+
+    main {
+        max-width: 700px;
+    }
+    
+}
     
