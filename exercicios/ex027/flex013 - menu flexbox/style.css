@@ -14,8 +14,6 @@ body {
     width: 100vw;
 }
 
-
-
 header { /*transformei em um flex-container*/
     background-color: gray;
     color: white;
@@ -27,12 +25,11 @@ header { /*transformei em um flex-container*/
 }
 
 header > h1 {
-    border: 1px dotted black;
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.415);
 }
 
 header > nav { /*também transformei o nav em um flex-container - se tornando um flex-container dentro de outro flex-container*/
-    border: 1px dotted black;
 
     display: flex;
     flex-flow: row wrap;
@@ -72,15 +69,12 @@ main {
 main > p {
     text-align: justify;
     text-indent: 20px;
+    margin-top: 10px;
 }
 
-
-
 @media screen  and (min-width: 667px){
-
     main {
         max-width: 700px;
     }
-    
 }
     
