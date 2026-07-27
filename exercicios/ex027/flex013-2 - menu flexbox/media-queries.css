@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 703px) {
+    span#burguer {
+        display: none;
+    }
+    nav#itens{
+        display: block;
+        margin: 10px;
+    }
+
+    header {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    header > nav > a {
+        display:inline-block;
+        width: 100px;
+    }
+
+    main {
+        flex-basis: 750px;
+    }   
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Flexbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <h2>Teste de Flexbox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo facere laudantium deleniti. Voluptatibus ea, voluptatum placeat, commodi ipsum earum quidem alias ullam unde soluta numquam odit suscipit deserunt tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia amet quaerat, laborum ea similique, cumque ratione facere, perferendis consequatur sunt asperiores consectetur commodi maiores. Quae modi quisquam natus perferendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora aperiam quos totam. Excepturi harum fugit cupiditate ex natus perferendis maiores! Minus maxime deserunt neque perferendis nobis accusamus unde. Voluptas?</p>
+        </main>
+    </div>
+    <script>
+        function mudouTamanho(){
+           if (window.innerWidth > 703) { /*se a largura da minha tela (window.innerWidth) for maior que 703 */
+               itens.style.display = "block";
+           } else {
+               itens.style.display = "none";
+           }  
+       }
+
+        function clickMenu() {
+            if (itens.style.display == 'none'){
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
