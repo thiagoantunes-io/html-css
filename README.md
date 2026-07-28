@@ -1,4 +1,4 @@
-# HTML & CSS
+# HTML e CSS
 
 Repositório dedicado aos meus estudos de **HTML5** e **CSS3**.
 
