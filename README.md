@@ -47,9 +47,9 @@ Ao longo deste repositório serão explorados temas como:
 
 ## Cursos
 
-- ✅ Curso em Vídeo — HTML5 e CSS3 (Professor Gustavo Guanabara)
-- ⏳ Origamid — HTML e CSS
-- ⏳ Outros cursos poderão ser adicionados futuramente.
+- [x] Curso em Vídeo — HTML5 e CSS3 (Professor Gustavo Guanabara)
+- [ ] Origamid — HTML e CSS
+- [ ] Outros cursos poderão ser adicionados futuramente.
 
 ## Observações
 
