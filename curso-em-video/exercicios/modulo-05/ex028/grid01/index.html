@@ -7,15 +7,21 @@
     <style>
         div.container {
             border: 3px solid blue;
-            height: 250px;
+            /*height: 250px;*/
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+          /* grid-template-columns: auto auto auto;
+           grid-template-rows: 100px 100px 100px;*/
+            grid-template: 100px 100px 100px / auto auto auto;
+
             gap: 5px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            /*align-items: normal;
+            justify-items: center;*/
+            place-items: normal center; /*ou stretch center*/
+
+            /*align-content: start;
+            justify-content: end;*/
+            place-content: start end;
+
         }
         div.item {
             border: 3px solid red;
