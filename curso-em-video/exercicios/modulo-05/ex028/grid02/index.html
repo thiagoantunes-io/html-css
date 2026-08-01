@@ -9,15 +9,12 @@
             border: 3px solid blue;
             height: 250px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-
+            grid-template: repeat(3, auto) / repeat(3, auto);
             gap: 10px;
-            align-items: normal;  /*ou stretch*/
-            justify-items: center;
-            align-content: start;
-            justify-content: end;
+            place-items: start center;
+            place-content: space-between end;
         }
+        
         div.item {
             border: 3px solid red;
             padding: 5px;
