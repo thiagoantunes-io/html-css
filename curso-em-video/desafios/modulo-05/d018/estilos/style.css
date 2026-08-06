@@ -285,6 +285,26 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto; /*grid-template-columns: 1fr 90VW 1fr;*/
+
+  }
+
+  section#ficha{
+    grid-column: 2 / 3;
+    height: fit-content; /*ficará com a altura de acordo com o conteúdo*/
+    position: sticky;
+    top: 65px;
+    
+
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+
+  }
+
+
   #skill-container{
     grid-template-columns: 1fr 1fr;
   }
@@ -304,4 +324,6 @@ footer a:hover {
     max-height: 200px;
   }
 }
+
+
 
