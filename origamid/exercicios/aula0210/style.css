@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: #000; /* ou #000000*/
+    color: #fff; /* ou #ffffff*/
+    display: inline-block;
+    width: 200px;
+}
+
+a {
+    background-color:rgba(255, 255, 255, 0.837);
+}
+
+div {
+    box-sizing: border-box;
+    background-color: aquamarine;
+    width: 140px;
+    height: 80px;
+    padding: 20px;
+}
