@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 20px;
+    justify-content: center;
+    align-content: end;
+    height: 90vh;
+    place-content: center;
+
+}
+
+div.item {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+    
+    
+}
+
+div.item h2 {
+    margin-top: 0px;
+}
+
+a.comprar {
+    text-decoration: none;
+    background-color: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
