@@ -4,20 +4,26 @@ div.grid {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .titulo {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
+    text-align: center;
+
 }
 
 .info {
     display: grid;
-    place-self: start;
-    place-items: start start;
+    /* place-self: start; */
+    /* place-items: start start; */
+    align-items: start;
+    justify-items: start;
     gap: 20px;
+    /* align-content: center; */
     
 }
-
 
 /* Estilos Gerais */
 
