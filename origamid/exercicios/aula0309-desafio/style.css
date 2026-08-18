@@ -28,6 +28,10 @@ body {
     line-height: 1.5em;
 }
 
+p { 
+    font-size: 20px;
+}
+
 .grid-geral{
     display: grid;
     gap: 60px;
@@ -82,6 +86,10 @@ main.grid-principal {
     position: relative;
 }
 
+.info-grid h2 {
+    font-size: 1.8em;
+}
+
 .info-grid .linha {
     transform: rotate(90deg) scale(3);
     color: #ee2211;
@@ -90,15 +98,13 @@ main.grid-principal {
     top: 20px;
 }
 
-.info-grid p {
-    font-size: 1.1em;
-}
 
-.info-grid span.ver-mais {
+.info-grid a.ver-mais {
     background-color: #ee2211;
     color: white;
     padding: 15px 30px;
     border-radius: 4px;
+    text-decoration: none;
 
     place-self: end;
 }
@@ -140,6 +146,10 @@ h2.titulo2{
     top: 6px;
 }
 
+.info-grid2 span {
+    font-size: 20px;
+}
+
 .info-grid2 p {
     margin: 0px 35px 15px 35px;
     /* padding: 15px 0 20px 0; */
@@ -147,7 +157,6 @@ h2.titulo2{
 
 
 footer {
-    
     background-color: white;
     height: 100px;
 
