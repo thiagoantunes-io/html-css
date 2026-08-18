@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* 
+# Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    margin: 60px;
+}
+
+.grid-geral{
+    display: grid;
+    gap: 60px;
+}
+
+
+header {
+    grid-column: 1 / -1;
+}
+
+header h1.titulo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-flex a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+main {
+    background-color: white;
+}
+
+
+main.grid-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.info-grid {
+    display: grid;
+    place-items: center end;
+    padding: 20px;
+}
+
+
+.foto {
+    grid-column: 2;
+    
+}
+
+
+
+
+
+
+
+
+img {
+    width: 100%;
+}
