@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: #eee;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block; /*ou display:block - utilizo o display no link, pois senão ele acabaria estourando ao utilizar o padding, por exemplo, e acabaria invadindo o espaço dos outros itens*/ 
+
+}
