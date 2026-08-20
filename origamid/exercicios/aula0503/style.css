@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.bicicleta {
+    height: 600px;
+    background-color: lightblue;
+    background-image: url('imagens/bicicleta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    /* background: lightblue url(imagens/bicicleta.jpg) no-repeat cover center top; */
+}
+
+h1 {
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.pattern {
+    height: 300px;
+    background-color: lightcoral;
+    background-image: url('imagens/pattern.svg');
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+.linear {
+    height: 300px;
+    background-image: linear-gradient(to top, lightcoral, lightblue);
+    
+
+}
