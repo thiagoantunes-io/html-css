@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+a {
+    background-color: #caf;
+    color: #217;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightblue;
+    
+}
+
+a:focus{
+    background-color: #cfa;
+    color: #371;
+}
+
+a:active {
+    background-color: #ffa;
+    color: #761;
+}
+
+
+.lista-1 li:first-child {
+    background-color: #caf;
+}
+
+.lista-1 li:last-child {
+    background-color: #cfa;
+}
+
+.lista-1 li:nth-child(3) {
+    background-color: rgb(108, 210, 56);
+
+}
+
+.lista-2 li:not(:first-child, :last-child) {
+    background-color: lightgray;
+}
+
+.lista-2 li:nth-child(3n){
+    background-color: lightsalmon;
+}
+
+
