@@ -7,46 +7,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="imagens/bikcraft.svg" alt="bikcraft">
-    <div class="menu">
-        <a href="#">Sobre</a>
-        <a href="#">Produtos</a>
-        <a href="#">Lojas</a>
-        <a href="#">Contato</a>
+    <div class="grid-principal">
+        <header>
+            <img src="imagens/bikcraft.svg" alt="bikcraft">
+            <nav class="menu" aria-label=”primária”>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Lojas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="apresentacao">
+                <h1>Bicicletas Feitas a Mão</h1>
+                <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</p>
+                <a class="botao" href="#">Ver Mais</a>
+            </article>
+            <img class="foto" src="imagens/bicicleta.jpg" alt="bicicleta preta" title="bicicleta preta">
+            <h1 class="subtitulo">Vantagens Bikcraft</h1>
+            <article class="info">
+                <ul class="lista">
+                    <li>
+                        <img src="imagens/eletrica.svg" alt="">
+                        <div class="extras">
+                            <h2>Motor Elétrico</h2>
+                            <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/velocidade.svg" alt="">
+                        <div class="extras">
+                            <h2>40km/h</h2>
+                            <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/rastreador.svg" alt="">
+                        <div class="extras">
+                            <h2>Rastreador</h2>
+                            <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </main>
     </div>
-
-    <div class="conteudo">
-        <div class="introducao">
-            <span class="detalhe"></span>
-            <h1>Bicicletas Feitas a Mão</h1>
-            <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</p>
-            <a class="botao" href="#">Ver Mais</a>
-        </div>
-
-        <img src="imagens/bicicleta.jpg" alt="bicicleta bikcraft preta">
-        
-        <h2 class="subtitulo">Vantagens Bikcraft</h2>
-
-        <div class="vantagens">
-            <div class="vantagens-item">
-                <img src="imagens/eletrica.svg" alt="">
-                <h3>Motor Elétrico</h3>
-                <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
-            </div>
-            <div class="vantagens-item">
-                <img src="imagens/velocidade.svg" alt="">
-                <h3>40km/h</h3>
-                <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-            </div>
-            <div class="vantagens-item">
-                <img src="imagens/rastreador.svg" alt="">
-                <h3>Rastreador</h3>
-                <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-            </div>
-        </div>
-    </div>
-    <div class="rodape">
+    <footer>
         <p>Bikcraft. Alguns direitos reservados.</p>
-    </div>
+    </footer>  
 </body>
 </html>
