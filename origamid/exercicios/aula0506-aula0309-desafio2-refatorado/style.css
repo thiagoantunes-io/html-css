@@ -79,12 +79,11 @@ header > img {
 }
 
 .menu ul li a {
-    /* display: inline-block; */
+    display: inline-block;
     background-color: var(--cor-fundo03);
     padding: 1rem 2rem;
     text-transform: uppercase;
     border-radius: 4px;
-    
 }
 
 .menu a:hover {
@@ -173,12 +172,10 @@ main {
     border-left: 4px solid var(--cor-fundo02);
 }
 
-
 .info .lista .extras {
     display: grid;
     gap: 20px;  
 }
-
 
 footer {
     width: 100vw;
