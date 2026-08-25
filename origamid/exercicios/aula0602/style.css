@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+@media (max-width: 600px) { /*abaixo de 600px*/
+    div {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        background-color: lightpink;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px), (max-width: 500px) { /*maior que 1000px, ou seja, aplica o bloco quando for maior que 1000px */
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) { /* irá aplicar o bloco se a largura da tela tiver no mínimo 700 px e no máximo 900px */
+    p {
+        background-color: lightskyblue;
+    }
+}
+
+@media screen {
+    body {
+        background-color: pink;
+    } 
+}
+
+@media print {
+    body {
+        background-color: lightgreen;
+    } 
+}
