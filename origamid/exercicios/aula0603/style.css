@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.minmax {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 2rem;
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+    .minmax img {
+        order: 1;
+    }
+}
