@@ -14,7 +14,7 @@ img {
 }
 
 p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .cover img {
@@ -25,4 +25,8 @@ p {
 
 p {
   max-width: 60ch;
+}
+
+.texto {
+    align-self: center;
 }
