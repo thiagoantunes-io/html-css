@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* 
+# Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo01: #f7f7f7;
+    --cor-fundo02: #ee2211;
+    --cor-fundo03: white;
+    --cor-fundo04: #900;
+
+    --cor-fonte01: black;
+    --cor-fonte02: #c6c6c6;
+    --cor-fonte03: white;
+
+    --fonte01: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo01);
+    font-family: var(--fonte01);
+}
+
+a {
+    color: var(--cor-fonte01);
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.grid-principal {
+    display: grid;
+    justify-content: center;
+    gap: 60px;  
+}
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+    margin-top: 60px;
+    
+}
+
+.logo img {
+    width: clamp(144px,20vw,300px);
+    /* width: 9rem; */
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: inline-block;
+    background-color: var(--cor-fundo03);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.menu a:hover {
+    border: 2px solid var(--cor-fundo02);
+}
+
+main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.apresentacao {
+    background-color: var(--cor-fundo03);
+    display: grid;
+    justify-items: end;
+    align-content: center;
+    text-align: end;
+    padding: 40px;
+    gap: 20px;
+    position: relative;
+}
+
+.apresentacao h1::after {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: var(--cor-fundo02);
+    
+    position: absolute;
+    top: 40px;
+    right: -30px;
+}
+
+.apresentacao .botao{
+    background-color: var(--cor-fundo02);
+    color: var(--cor-fonte03);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.apresentacao .botao:hover {
+    background-color: var(--cor-fundo04);
+    transition: background-color 0.3s ease;
+}
+
+.foto {
+    display: block;
+    max-width: 100%;
+}
+
+.subtitulo {
+    font-size: 4rem; /*equivalente a 64px */
+    color: var(--cor-fonte02);
+    text-align: end;
+    padding: 40px;
+    text-transform: uppercase;
+
+    /* display: grid; */
+    /* align-items: center; */
+
+    /* height: 100%; */
+    align-self: center;
+    background-image: url(imagens/onda.svg);
+}
+
+.info {
+    padding: 40px;
+    background-color: var(--cor-fundo03);
+}
+
+.info .lista li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.info .lista li:nth-child(odd) {
+    background-color: var(--cor-fundo01);
+}
+
+.info .lista li:hover {
+    border-left: 4px solid var(--cor-fundo02);
+}
+
+.info .lista .extras {
+    display: grid;
+    gap: 20px;  
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--cor-fundo03);
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+}
+
