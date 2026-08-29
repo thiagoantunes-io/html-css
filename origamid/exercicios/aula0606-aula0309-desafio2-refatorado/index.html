@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikcraft</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <div class="grid-principal">
         <header>
             <div class="logo">
                 <img src="imagens/bikcraft.svg" alt="bikcraft">
             </div>
-            <nav class="menu" aria-label=”primária”>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <nav id="itensMenu" class="menu" aria-label=”primária”>
                 <ul>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Produtos</a></li>
@@ -27,8 +30,10 @@
                 <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</p>
                 <a class="botao" href="#">Ver Mais</a>
             </article>
-            <img class="foto" src="imagens/bicicleta.jpg" alt="bicicleta preta" title="bicicleta preta">
-            <h1 class="subtitulo">Vantagens Bikcraft</h1>
+            <div class="container-foto">
+                <img class="foto" src="imagens/bicicleta.jpg" alt="bicicleta preta" title="bicicleta preta">
+            </div>
+            <h1 class="subtitulo">Vantagens<br>Bikcraft</h1>
             <article class="info">
                 <ul class="lista">
                     <li>
@@ -59,5 +64,24 @@
     <footer>
         <p>Bikcraft. Alguns direitos reservados.</p>
     </footer>  
+
+      <script>
+      function clickMenu(){
+           if (itensMenu.style.display == 'block') { /* posso usar aspas simples ou duplas */
+               itensMenu.style.display = 'none';
+           } else {
+               itensMenu.style.display = 'block';
+           }
+       }
+
+       function mudouTamanho(){
+           if (window.innerWidth > 610) { /*se a largura da minha tela (window.innerWidth) for maior que 610 */
+               itensMenu.style.display = "block";
+           } else {
+               itensMenu.style.display = "none";
+           }  
+       }
+   </script>
+
 </body>
 </html>
