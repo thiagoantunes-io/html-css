@@ -167,11 +167,11 @@ main {
     padding: 40px;
     text-transform: uppercase;
 
-    /* display: grid; */
-    /* align-items: center; */
+    display: grid;
+    align-items: center;
 
     /* height: 100%; */
-    align-self: center;
+    /* align-self: center; */
     background-image: url(imagens/onda.svg);
 }
 
