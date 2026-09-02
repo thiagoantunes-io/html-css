@@ -162,5 +162,9 @@
         position: initial;
         margin-bottom: 10px;
     }
+
+    .formacao-container::after {
+        background-size: 100px;
+    }
 }
 
