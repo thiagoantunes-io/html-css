@@ -7,6 +7,8 @@ body {
 
 label {
     display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 input {
@@ -15,4 +17,17 @@ input {
     /* border: 2px solid black;
     border-radius: 4px;
     background-color: #ccc; */
+}
+
+button {
+    display: block;
+    margin-top: 30px;
+    background-color: #caf;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #217;
+    font-size: 1rem;
+    cursor: pointer;
 }
