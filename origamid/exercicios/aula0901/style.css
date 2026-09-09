@@ -31,3 +31,24 @@ button {
     font-size: 1rem;
     cursor: pointer;
 }
+
+
+.checkbox, .radio {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkbox label, .radio label {
+    margin: 0px;
+    /* display: inline-block; */
+
+}
+
+.checkbox input, .radio input  {
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}

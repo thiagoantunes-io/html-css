@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="./" method="post">
-        <label for="nome">Nome</label>
+        <!-- <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome">
 
         <label for="senha">Senha</label>
@@ -22,6 +22,42 @@
 
         <label for="saida">Saída do Hotel</label>
         <input type="date" name="saida" id="saida">
+
+        
+        
+        <div class="checkbox">
+            <input type="checkbox" name="termos" id="termos" value="aceito">
+            <label for="termos">Li os termos e condições da empresa</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" name="anuncio" id="anuncio" value="aceito">
+            <label for="anuncio">Desejo receber anúncios.</label>
+        </div> -->
+
+        <p>Entrega:</p>
+
+        <div class="radio">
+            <input type="radio" name="retirada" id="retirada">
+            <label for="retirada">Retirar no local</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="retirada" id="entrega">
+            <label for="entrega">Entrega em casa</label>
+        </div>
+
+        <p>Futuro</p>
+
+        <div class="radio">
+            <input type="radio" name="futuro" id="retirada2">
+            <label for="retirada2">Retirar no local</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="futuro" id="entrega2">
+            <label for="entrega2">Retirar no local</label>
+        </div>
 
         <button>Enviar</button>
     </form>
