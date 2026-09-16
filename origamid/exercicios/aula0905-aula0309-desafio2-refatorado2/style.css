@@ -18,22 +18,26 @@ Vantagens Bikcraft: 64px
 conteúdo principal: máximo 1000px */
 
 :root {
-    --cinza-fundo: #f7f7f7;
-    --branco-fundo: white;
-    --preto-fundo: black;
-    --cinza-texto: #c6c6c6;
-    --vermelho: #ee2211;
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto-1: #000000;
+    --texto-2: #ffffff;
+    --texto-3: #c6c6c6;
+    --onda: url("imagens/onda-clara.svg");
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: var(--cinza-fundo);
+    background-color: var(--fundo-1);
     display: grid;
     gap: 3.75rem; /* equivale a 60px */
     justify-items: center;
     margin-top: 3.75rem;
     /* margin: 0px 10px; */
+    color: var(--texto-1);
 }
 
 img {
@@ -75,16 +79,16 @@ p {
 
 .menu a {
     display: block; /* ou display: inline-block; */
-    background-color: var(--branco-fundo);
+    background-color: var(--fundo-2);
     padding: 1rem 2rem;
     border-radius: 4px;
-    color: var(--preto-fundo);
+    color: var(--texto-1);
     text-transform: uppercase;
     border: 2px solid transparent;
 }
 
 .menu a:hover {
-    border-color: var(--vermelho); /* border: 2px solid #e21; */
+    border-color: var(--cor-primaria); /* border: 2px solid #e21; */
 }
 
 .conteudo {
@@ -94,7 +98,7 @@ p {
 }
 
 .introducao {
-    background-color: var(--branco-fundo);
+    background-color: var(--fundo-2);
     padding: 2.5rem;
     text-align: right;
     position: relative;
@@ -113,7 +117,7 @@ p {
     content: "";
     width: 3.75rem;
     height: 0.25rem;
-    background-color: var(--vermelho);
+    background-color: var(--cor-primaria);
     /* display: inline-block; */
     position: absolute;
     top: 30px;
@@ -126,31 +130,31 @@ p {
 }
 
 .botao {
-    background-color:var(--vermelho);
-    color: var(--branco-fundo);
+    background-color: var(--cor-primaria);
+    color: var(--texto-2);
     padding: 1rem 2rem;
     border-radius: 4px;
     text-transform: uppercase;
 }
 
 .botao:hover {
-    background-color: #900;
+    background-color: var(--cor-primaria-escura);
 }
 
 .subtitulo {
     font-size: 4rem;
     text-transform: uppercase;
-    color: var(--cinza-texto);
+    color: var(--texto-3);
     text-align: right;
     padding: 2.5rem;
     align-self: center;
-    background-image: url("imagens/onda.svg");
+    background-image: var(--onda);
 
     /* word-break: break-all; */
 }
 
 .vantagens {
-    background-color:var(--branco-fundo);
+    background-color: var(--fundo-2);
     padding: 2.5rem;
 }
 
@@ -163,11 +167,11 @@ p {
 }
 
 .vantagens-item:hover {
-    border-left: 4px solid var(--vermelho);
+    border-left: 4px solid var(--cor-primaria);
 }
 
 .vantagens-item:nth-child(odd) {
-    background-color: var(--cinza-fundo);
+    background-color: var(--fundo-1);
 }
 
 
@@ -177,7 +181,7 @@ p {
 
 .rodape {
     box-sizing: border-box;
-    background-color: var(--branco-fundo);
+    background-color: var(--fundo-2);
     text-align: center;
     width: 100vw;
     padding: 40px; 
@@ -230,12 +234,14 @@ p {
     }
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark){
+    
     :root {
-        --cinza-fundo: #f7f7f7;
-        --branco-fundo: white;
-        --preto-fundo: black;
-        --cinza-texto: white;
-    --vermelho: #ee2211;
+        --cor-primaria: #e21;
+        --cor-primaria-escura: #900;
+        --fundo-1: #111111;
+        --fundo-2: #000000;
+        --texto-1: #ffffff;
+        --onda: url("imagens/onda-escura.svg");
     }
-} */
+}
